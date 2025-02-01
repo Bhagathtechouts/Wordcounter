@@ -1,26 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      resize: none;
+      margin-bottom: 15px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    textarea:focus {
+      border-color: #007BFF;
+    }
+
+    #wordCount {
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    #wordCount span {
+      color: #007BFF;
+    }
+
+
+  </style>
 </head>
 <body>
-    
 
+  <div class="container">
+    <h1>Word Counter</h1>
+    <textarea id="textArea" placeholder="Type your text here..."></textarea>
+    <div id="wordCount">Word Count: <span>0</span></div>
+  </div>
 
-    <div class="stopwatch-container">
-        <h1>Stopwatch</h1>
-        <div id="timeDisplay">00:00:00</div>
-        <button id="startStopButton">Start</button>
-        <button id="resetButton">Reset</button>
-    </div
-
-
-
-
-
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
